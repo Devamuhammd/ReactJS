@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Team = () => {
   return (
@@ -18,6 +19,7 @@ const Team = () => {
                 <p className="card-text">Front-End Developer</p>
               </div>
             </div>
+            <Link to="/Team"></Link>
           </div>
         ))}
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-const Contact = () => {
+export default function Books() {
   return (
     <div className="container mt-5 mb-5">
       <h2 className="text-center mb-4">Contact Us</h2>
@@ -19,8 +20,8 @@ const Contact = () => {
         </div>
         <button type="submit" className="btn btn-primary">Send</button>
       </form>
+      <Link to="/Contact"></Link>
     </div>
   );
 };
 
-export default Contact;
