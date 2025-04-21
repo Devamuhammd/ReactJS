@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './Pages';
 import Books from "./Pages/books";
 import Contact from "./Pages/Contact";
@@ -30,10 +30,8 @@ function App() {
           <Route path="Login" element={<Login />} />
           <Route path="Register" element={<Register />} />
         </Routes>
-        
-        <button onClick={addBook}>Tambah Buku</button>
-        
       </BrowserRouter>
+      <button onClick={addBook}>Tambah Buku</button>
     </div>
     </>
   );
